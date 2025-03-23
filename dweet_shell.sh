@@ -36,14 +36,14 @@ Publish()
 
 	echo -e "${GREEN}Topic to publish to:${RESET}"
 	read topicname
-	echo -e "${GREEN}Topic Key:${RESET}"
+	echo -e "${GREEN}Content Key:${RESET}"
 	read key
-	echo -e "${GREEN}Topic Value:${RESET}"
+	echo -e "${GREEN}Content Value:${RESET}"
         read value
-	echo -e "${GREEN}Topic UID/Name:${RESET}"
+	echo -e "${GREEN}Content UID/Name:${RESET}"
 	read name
-	curl "$DWEET_SERVER/publish/yoink/for/$topicname?$key=$value&name=$name" | jq .
-	
+	echo -e "\n\033[7;34m$DWEET_SERVER/publish/yoink/for/$topicname?$key=$value&UID=$name${RESET}\n"
+	curl "$DWEET_SERVER/publish/yoink/for/$topicname?$key=$value&UID=$name" | jq .
 }
 
 #Get Latest yoink from topic
