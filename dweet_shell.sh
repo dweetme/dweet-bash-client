@@ -1,11 +1,5 @@
+#Copyright (c) 2025 dweet.me
 #!/bin/bash
-#/publish/yoink/for/{topic}
-#/get/latest/yoink/from/{topic}
-#/get/latest/{number}/yoinks/from/{topic}
-#/get/{number}/latest/yoinks/from/{topic}
-#/get/last/{number}/yoinks/from/{topic}
-#/get/{number}/last/yoinks/from/{topic}
-#/get/all/yoinks/from/{topic}
 
 # Enable color formatting
 RED='\033[0;31m'
