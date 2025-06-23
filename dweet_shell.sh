@@ -9,7 +9,7 @@ YELLOW='\033[0;33m'
 CYAN='\033[0;36m'
 RESET='\033[0m'
 
-DWEET_SERVER='http://dweet.me:3333'
+DWEET_SERVER='https://dweet.me:3334'
 
 if ! command -v curl &> /dev/null; then
 	echo -e "${RED}Error: 'curl' is not installed. This script needs it to run. Please install it and try again.${RESET}"
